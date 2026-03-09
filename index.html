@@ -23,10 +23,12 @@
 
     <section id="sobre-mim"> <!--Seção do site-->
         <h2>Sobre mim</h2>
-        <img src="https://media.gettyimages.com/id/869175050/pt/foto/lioness-portrait.jpg?s=612x612&w=0&k=20&c=CUtWrZchsywqKSnbbOrZBN2703k1o0tqK97JnLtfXXo=" alt="Imagem">
-        
+        <img src="https://media.gettyimages.com/id/869175050/pt/foto/lioness-portrait.jpg?s=612x612&w=0&k=20&c=CUtWrZchsywqKSnbbOrZBN2703k1o0tqK97JnLtfXXo="
+            alt="Imagem">
+
         <article> <!--Artigo - onde dados específicos são apresentados-->
-            <p>Olá! Meu nome é Taís Sippel e estou me tornando uma desenvolvedora web, com espectativa de atuar no mercado de tecnologia, após anos trabalhando em setores administrativos/financeiros.</p>
+            <p>Olá! Meu nome é Taís Sippel e estou me tornando uma desenvolvedora web, com espectativa de atuar no
+                mercado de tecnologia, após anos trabalhando em setores administrativos/financeiros.</p>
         </article>
 
         <aside>
@@ -35,8 +37,8 @@
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
-         </aside>
-     </section>
+        </aside>
+    </section>
 
     <section id="projetos">
         <h2>Projetos</h2>
@@ -48,12 +50,39 @@
     <footer>Direitos reservados &copy; 2026 Taís Sippel
         <section id="contato">
             <h2>Contato</h2>
+
             <p>Tem um projeto em mente? Entre em contato</p>
-            <address>
-                E-mail: <a href="mailto:tais.sippel@gmail.com">tais.sippel@gmail.com</a> <br>
-                Telefone: <a href="tel: (00) 1234.5678">(00) 1234.5678</a>
-            </address>
-        
+
+            <form action="">
+
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" name="nome" required><br>
+
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="telefone">Telefone: </label>
+                <input type="tel" id="telefone" name="telefone" required><br>
+
+                <label for="assunto">Assunto :</label>
+                <select name="assunto" id="assunto">
+                    <option value="orçamento">Orçamento</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="outro">Outro</option><br>
+                </select>
+
+                <label for="mensagem">Mensagem: </label>
+                <textarea name="mensagem" id="mensagem" cols="" 30" rows="10">Deixe sua mensagem</textarea> <br>
+
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Desejo receber novidades e promoções!</label><br>
+
+                <input type="submit" value="Enviar">
+
+            </form>
+
+
+
         </section>
 
     </footer>
